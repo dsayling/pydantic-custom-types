@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "pydantic-custom-types"
+version = "0.1.0"
+description = ""
+authors = ["cpodalak <cpodalak@gmail.com>"]
+readme = "README.md"
+packages = [{include = "pydantic_custom_types"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^2.5.3"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.4"
+coverage = "^7.4.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.12.1"
+ruff = "^0.1.14"
+mypy = "^1.8.0"
+tox = "^4.12.1"
+
+
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "^1.5.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
